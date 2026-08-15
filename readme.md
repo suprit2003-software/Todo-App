@@ -26,7 +26,7 @@ Make sure your local directory is organized like this for the code to run correc
 
 ## 📜 Key Code Insights
 Instead of adding individual event listeners to every single delete button (which fails for newly added tasks), this project uses **Event Delegation**:
-```javascript
+```javascript:-
 ul.addEventListener("click", function(event){
     if(event.target.nodeName == "BUTTON"){
         let listItem = event.target.parentElement;
